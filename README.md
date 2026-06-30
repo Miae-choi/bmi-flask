@@ -20,6 +20,16 @@ python bmi_c_flask.py
 
 실행 후 브라우저에서 http://127.0.0.1:5000 에 접속하세요.
 
+## Vercel 배포
+
+이 저장소는 Vercel 서버리스(Python) 규격에 맞춰져 있습니다.
+
+- `api/index.py` : Flask 앱 (서버리스 함수 진입점)
+- `vercel.json` : 모든 요청을 `/api/index` 로 라우팅
+
+[vercel.com](https://vercel.com) 에서 **Add New → Project → Import Git Repository** 로
+이 저장소를 선택하면 자동으로 빌드·배포됩니다. 이후 `git push` 할 때마다 자동 재배포됩니다.
+
 ## BMI 계산식
 
 ```
